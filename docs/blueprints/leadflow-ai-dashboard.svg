@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024">
+<defs>
+ <linearGradient id="nav" x1="0" x2="1"><stop stop-color="#07162f"/><stop offset="1" stop-color="#102452"/></linearGradient>
+ <filter id="s"><feDropShadow dx="0" dy="5" stdDeviation="8" flood-opacity=".12"/></filter>
+ <style>
+ .h{font:700 22px Arial;fill:#102047}.m{font:700 15px Arial;fill:#102047}.t{font:400 13px Arial;fill:#4b6288}.nav{font:400 14px Arial;fill:#dbe7ff}.navb{font:700 14px Arial;fill:#fff}.num{font:700 27px Arial;fill:#102047}.sm{font:400 11px Arial;fill:#6b7f9e}.white{fill:#fff}.chip{font:700 11px Arial}
+ </style>
+</defs>
+<rect width="1536" height="1024" fill="#f6f9fd"/>
+<rect width="230" height="1024" fill="url(#nav)"/>
+<text x="28" y="45" font-family="Arial" font-size="23" font-weight="700" fill="#fff">◆ LeadFlow AI</text>
+<rect x="14" y="72" width="202" height="48" rx="10" fill="#1d4ed8"/>
+<text x="36" y="102" class="navb">⌂  Tổng quan</text>
+<text x="34" y="150" class="nav">◉  Chiến dịch</text><text x="34" y="198" class="nav">⌘  Từ khóa</text>
+<text x="34" y="246" class="nav">♙  Nhóm &amp; Fanpage</text><text x="34" y="294" class="nav">▣  Lead Inbox</text>
+<text x="190" y="294" class="navb">23</text><text x="34" y="342" class="nav">▢  Tin nhắn &amp; Comment</text>
+<text x="34" y="390" class="nav">✎  Mẫu phản hồi</text><text x="34" y="438" class="nav">♢  AI Assistant</text>
+<text x="34" y="486" class="nav">↗  Thống kê</text><text x="34" y="534" class="nav">◉  Nhật ký hoạt động</text>
+<text x="34" y="582" class="nav">⚙  Cài đặt</text>
+<rect x="20" y="820" width="190" height="130" rx="18" fill="#12295a"/>
+<text x="42" y="855" class="navb">Cùng LeadFlow AI</text><text x="42" y="878" class="nav">biến cơ hội thành khách hàng</text><text x="42" y="907" class="sm" fill="#b8c7e5">Tự động quét • Phân tích • Kết nối</text>
+
+<text x="260" y="52" class="h">Xin chào, Nguyễn Văn A 👋</text>
+<text x="260" y="78" class="t">Hôm nay là một ngày tuyệt vời để tìm kiếm khách hàng mới!</text>
+<rect x="1200" y="25" width="290" height="48" rx="24" fill="#fff" stroke="#dce6f3"/>
+<circle cx="1224" cy="49" r="8" fill="#16a34a"/><text x="1242" y="54" class="m">Đang hoạt động</text>
+
+<!-- metric cards -->
+<g filter="url(#s)">
+<rect x="260" y="112" width="265" height="115" rx="14" fill="#fff" stroke="#dbe7f5"/>
+<rect x="545" y="112" width="265" height="115" rx="14" fill="#fff" stroke="#dbe7f5"/>
+<rect x="830" y="112" width="265" height="115" rx="14" fill="#fff" stroke="#dbe7f5"/>
+<rect x="1115" y="112" width="265" height="115" rx="14" fill="#fff" stroke="#dbe7f5"/>
+</g>
+<text x="282" y="142" class="t">Bài viết đã quét</text><text x="282" y="178" class="num">1.248</text><text x="282" y="204" class="sm">↑ 12% so với hôm qua</text>
+<text x="567" y="142" class="t">Lead tiềm năng</text><text x="567" y="178" class="num">86</text><text x="567" y="204" class="sm">↑ 18% so với hôm qua</text>
+<text x="852" y="142" class="t">Đã gửi comment</text><text x="852" y="178" class="num">42</text><text x="852" y="204" class="sm">↑ 28% so với hôm qua</text>
+<text x="1137" y="142" class="t">Đã gửi tin nhắn</text><text x="1137" y="178" class="num">17</text><text x="1137" y="204" class="sm">↑ 55% so với hôm qua</text>
+
+<!-- chart -->
+<rect x="260" y="250" width="650" height="270" rx="14" fill="#fff" stroke="#dbe7f5" filter="url(#s)"/>
+<text x="282" y="283" class="h">Hiệu suất 7 ngày qua</text>
+<path d="M300 460 C380 390 420 420 485 400 S610 355 680 390 S790 340 875 365" fill="none" stroke="#2563eb" stroke-width="4"/>
+<path d="M300 480 C380 445 440 450 500 435 S610 410 680 430 S790 390 875 405" fill="none" stroke="#10b981" stroke-width="4"/>
+<path d="M300 495 C380 470 440 485 500 470 S610 450 680 462 S790 430 875 442" fill="none" stroke="#7c3aed" stroke-width="4"/>
+<text x="300" y="500" class="sm">12/04</text><text x="410" y="500" class="sm">13/04</text><text x="520" y="500" class="sm">14/04</text><text x="630" y="500" class="sm">15/04</text><text x="740" y="500" class="sm">16/04</text><text x="850" y="500" class="sm">18/04</text>
+
+<!-- conversion -->
+<rect x="930" y="250" width="450" height="270" rx="14" fill="#fff" stroke="#dbe7f5" filter="url(#s)"/>
+<text x="952" y="283" class="h">Tỷ lệ chuyển đổi</text>
+<circle cx="1015" cy="375" r="65" fill="none" stroke="#e2e8f0" stroke-width="18"/>
+<path d="M1015 310 A65 65 0 0 1 1078 365" fill="none" stroke="#2563eb" stroke-width="18"/>
+<text x="1015" y="383" text-anchor="middle" class="num">6.8%</text>
+<text x="1110" y="355" class="m">Từ lead → Khách hàng</text><text x="1110" y="380" class="sm">↑ 2.3% so với tuần trước</text>
+<text x="1110" y="420" class="t">● Lead chất lượng          86</text><text x="1110" y="446" class="t">● Đã phản hồi             42</text><text x="1110" y="472" class="t">● Đã tư vấn                23</text>
+
+<!-- lead inbox -->
+<rect x="260" y="545" width="840" height="385" rx="14" fill="#fff" stroke="#dbe7f5" filter="url(#s)"/>
+<text x="282" y="580" class="h">Lead Inbox</text><text x="395" y="580" class="sm">86</text>
+<line x1="282" y1="600" x2="1075" y2="600" stroke="#e2e8f0"/>
+<text x="282" y="625" class="sm">Nội dung bài viết</text><text x="565" y="625" class="sm">Nguồn</text><text x="680" y="625" class="sm">Tác giả</text><text x="810" y="625" class="sm">Điểm tiềm năng</text><text x="930" y="625" class="sm">Trạng thái</text>
+<g class="t">
+<text x="282" y="665">Em đang cần làm website cho shop thời trang...</text><text x="565" y="665">Nhóm</text><text x="680" y="665">Trần Thị Mai</text><text x="825" y="665">92</text><text x="930" y="665">Chờ duyệt</text>
+<text x="282" y="720">Tìm đơn vị thiết kế logo chuyên nghiệp...</text><text x="565" y="720">Nhóm</text><text x="680" y="720">Nguyễn Văn Hùng</text><text x="825" y="720">78</text><text x="930" y="720">Chờ duyệt</text>
+<text x="282" y="775">Cần làm app quản lý nhân sự giá hợp lý...</text><text x="565" y="775">Nhóm</text><text x="680" y="775">Lê Thị Thảo</text><text x="825" y="775">65</text><text x="930" y="775">Đã comment</text>
+<text x="282" y="830">Có ai biết công ty nào làm website uy tín không?</text><text x="565" y="830">Nhóm</text><text x="680" y="830">Phạm Quốc Bảo</text><text x="825" y="830">54</text><text x="930" y="830">Đã nhắn tin</text>
+<text x="282" y="885">Tuyển nhân sự làm SEO part-time...</text><text x="565" y="885">Nhóm</text><text x="680" y="885">Hoàng Minh Anh</text><text x="825" y="885">32</text><text x="930" y="885">Không phù hợp</text>
+</g>
+
+<!-- right rail -->
+<rect x="1120" y="545" width="270" height="190" rx="14" fill="#fff" stroke="#dbe7f5" filter="url(#s)"/>
+<text x="1142" y="578" class="h">Hoạt động gần đây</text>
+<text x="1142" y="615" class="t">● Lead mới được phát hiện</text><text x="1142" y="637" class="sm">5 phút trước</text>
+<text x="1142" y="670" class="t">● Đã gửi comment</text><text x="1142" y="692" class="sm">8 phút trước</text>
+<text x="1142" y="725" class="t">● Cảnh báo quyền/tài khoản</text>
+
+<rect x="1120" y="755" width="270" height="175" rx="14" fill="#fff" stroke="#dbe7f5" filter="url(#s)"/>
+<text x="1142" y="788" class="h">AI Assistant</text><text x="1142" y="815" class="sm">Đề xuất phản hồi tự động</text>
+<rect x="1140" y="832" width="230" height="58" rx="10" fill="#f3f6ff"/>
+<text x="1152" y="854" class="sm">Chào bạn! Mình thấy bạn đang quan tâm</text>
+<text x="1152" y="872" class="sm">đến dịch vụ thiết kế website...</text>
+<rect x="1140" y="900" width="105" height="22" rx="7" fill="#fff" stroke="#cbd5e1"/><text x="1192" y="915" text-anchor="middle" class="sm">Sao chép</text>
+<rect x="1255" y="900" width="115" height="22" rx="7" fill="#2563eb"/><text x="1312" y="915" text-anchor="middle" fill="#fff" font-family="Arial" font-size="11" font-weight="700">Sử dụng</text>
+
+<text x="260" y="985" class="sm">Blueprint reference • LeadFlow AI • Human approval required for outbound actions</text>
+</svg>
