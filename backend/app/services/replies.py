@@ -1,0 +1,2 @@
+def suggest_reply(content:str,service_context:str)->str:
+ return f"Chào bạn, mình thấy bạn đang quan tâm đến nội dung này. Bên mình có thể hỗ trợ về {service_context}. Nếu bạn muốn, mình có thể tư vấn nhanh theo nhu cầu cụ thể của bạn."
