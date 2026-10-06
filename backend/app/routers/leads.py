@@ -29,7 +29,7 @@ async def list_leads(session: AsyncSession = Depends(get_session)):
 
 @router.get("/{lead_id}", response_model=LeadResponse)
 async def get_lead(lead_id: int, session: AsyncSession = Depends(get_session)):
-    lead = await build_lead_service(session)._repository.get(lead_id)
+    lead = await build_lead_service(session).get(lead_id)
     if lead is None:
         raise HTTPException(status_code=404, detail={"code": "lead_not_found", "message": "Lead not found"})
     return response(lead)
