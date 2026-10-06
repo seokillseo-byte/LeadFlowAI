@@ -1,85 +1,103 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="920" viewBox="0 0 1400 920">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100">
 <defs>
-  <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0b1730"/><stop offset="1" stop-color="#172554"/></linearGradient>
-  <linearGradient id="card" x1="0" x2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#f5f8ff"/></linearGradient>
-  <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-opacity=".18"/></filter>
-  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#64748b"/></marker>
+  <linearGradient id="head" x1="0" x2="1"><stop stop-color="#07162f"/><stop offset="1" stop-color="#173a8f"/></linearGradient>
+  <linearGradient id="desk" x1="0" x2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#f5f8ff"/></linearGradient>
+  <filter id="shadow"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-opacity=".14"/></filter>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 z" fill="#64748b"/></marker>
   <style>
-    .title{font:700 34px Arial;fill:#fff}.sub{font:400 16px Arial;fill:#cbd5e1}.h{font:700 19px Arial;fill:#0f172a}.t{font:400 14px Arial;fill:#334155}.small{font:400 12px Arial;fill:#64748b}.pill{font:700 12px Arial;fill:#fff}
+    .title{font:700 34px Arial;fill:#fff}.sub{font:400 16px Arial;fill:#cbd5e1}.h{font:700 20px Arial;fill:#102047}.t{font:400 14px Arial;fill:#334155}.s{font:400 12px Arial;fill:#64748b}.w{font:700 13px Arial;fill:#fff}.chip{font:700 12px Arial;fill:#0f172a}
   </style>
 </defs>
-<rect width="1400" height="920" fill="#f8fafc"/>
-<rect width="1400" height="145" fill="url(#bg)"/>
-<text x="60" y="62" class="title">LeadFlow AI — System Architecture Blueprint</text>
-<text x="60" y="94" class="sub">Windows-first AI lead radar • Human approval • Official Meta integration</text>
-<rect x="1120" y="46" width="210" height="42" rx="21" fill="#2563eb"/>
-<text x="1225" y="72" text-anchor="middle" class="pill">APPROVED BLUEPRINT</text>
+<rect width="1600" height="1100" fill="#f6f9fd"/>
+<rect width="1600" height="150" fill="url(#head)"/>
+<text x="60" y="58" class="title">LeadFlow AI — Detailed System Architecture Blueprint</text>
+<text x="60" y="91" class="sub">Windows desktop • AI-assisted lead discovery • Human approval • Official Meta provider boundary</text>
+<rect x="1300" y="45" width="230" height="42" rx="21" fill="#2563eb"/><text x="1415" y="72" text-anchor="middle" class="w">PRODUCTION BLUEPRINT</text>
 
-<!-- User -->
-<rect x="60" y="195" width="240" height="115" rx="18" fill="url(#card)" filter="url(#shadow)"/>
-<text x="82" y="230" class="h">User / Team</text>
-<text x="82" y="257" class="t">Marketing &amp; sales team</text>
-<text x="82" y="282" class="small">Review • Approve • Monitor</text>
+<!-- top actors -->
+<rect x="55" y="190" width="235" height="125" rx="18" fill="#fff" stroke="#dbe7f5" filter="url(#shadow)"/>
+<text x="78" y="225" class="h">User / Team</text><text x="78" y="252" class="t">Review • Approve • Monitor</text><text x="78" y="278" class="s">Campaign owner / operator</text><text x="78" y="299" class="s">Safety controls remain human-driven</text>
 
-<!-- Desktop -->
-<rect x="350" y="175" width="340" height="160" rx="18" fill="url(#card)" filter="url(#shadow)"/>
-<text x="375" y="211" class="h">Desktop App</text>
-<text x="375" y="236" class="small">Electron + React + TypeScript</text>
-<text x="375" y="268" class="t">• Dashboard</text><text x="500" y="268" class="t">• Lead Inbox</text>
-<text x="375" y="292" class="t">• Campaigns</text><text x="500" y="292" class="t">• Settings</text>
-<text x="375" y="316" class="t">• Notifications</text><text x="500" y="316" class="t">• Review Queue</text>
+<rect x="335" y="175" width="480" height="155" rx="20" fill="url(#desk)" stroke="#b8cdfa" stroke-width="2" filter="url(#shadow)"/>
+<text x="362" y="211" class="h">Windows Desktop App</text><text x="362" y="235" class="s">Electron + React + TypeScript</text>
+<rect x="362" y="253" width="125" height="34" rx="9" fill="#eaf1ff"/><text x="424" y="275" text-anchor="middle" class="chip">Dashboard</text>
+<rect x="497" y="253" width="125" height="34" rx="9" fill="#eaf8f3"/><text x="559" y="275" text-anchor="middle" class="chip">Lead Inbox</text>
+<rect x="632" y="253" width="125" height="34" rx="9" fill="#f2eaff"/><text x="694" y="275" text-anchor="middle" class="chip">Campaigns</text>
+<text x="362" y="311" class="s">Keywords • Groups/Pages • Messages/Comments • Templates • AI Assistant • Analytics • Logs • Settings</text>
 
-<!-- Meta -->
-<rect x="1000" y="175" width="340" height="160" rx="18" fill="#eef6ff" stroke="#93c5fd" filter="url(#shadow)"/>
-<text x="1025" y="211" class="h">Facebook / Meta</text>
-<text x="1025" y="236" class="small">Official API / supported permissions</text>
-<text x="1025" y="268" class="t">• Supported discovery</text>
-<text x="1025" y="292" class="t">• Account &amp; permission checks</text>
-<text x="1025" y="316" class="t">• Permitted outbound actions</text>
+<rect x="860" y="175" width="330" height="155" rx="20" fill="#eef6ff" stroke="#93c5fd" stroke-width="2" filter="url(#shadow)"/>
+<text x="887" y="211" class="h">Meta / Facebook</text><text x="887" y="235" class="s">Official APIs + supported permissions</text>
+<text x="887" y="264" class="t">• Account / capability checks</text><text x="887" y="288" class="t">• Supported discovery</text><text x="887" y="312" class="t">• Permitted outbound actions</text>
 
-<!-- Backend -->
-<rect x="280" y="405" width="840" height="155" rx="20" fill="url(#card)" stroke="#c7d2fe" stroke-width="2" filter="url(#shadow)"/>
-<text x="310" y="442" class="h">Backend API — FastAPI</text>
-<text x="310" y="468" class="small">Business orchestration and domain services</text>
-<rect x="310" y="492" width="145" height="42" rx="12" fill="#e0ecff"/><text x="382" y="518" text-anchor="middle" class="t">Campaign Service</text>
-<rect x="475" y="492" width="145" height="42" rx="12" fill="#e8f8f2"/><text x="547" y="518" text-anchor="middle" class="t">Keyword Engine</text>
-<rect x="640" y="492" width="130" height="42" rx="12" fill="#f3e8ff"/><text x="705" y="518" text-anchor="middle" class="t">Lead Service</text>
-<rect x="790" y="492" width="130" height="42" rx="12" fill="#fff3df"/><text x="855" y="518" text-anchor="middle" class="t">Action Queue</text>
-<rect x="940" y="492" width="145" height="42" rx="12" fill="#ffe8ed"/><text x="1012" y="518" text-anchor="middle" class="t">Provider Adapter</text>
+<rect x="1235" y="175" width="310" height="155" rx="20" fill="#fff7ed" stroke="#fdba74" stroke-width="2" filter="url(#shadow)"/>
+<text x="1262" y="211" class="h">External AI Provider</text><text x="1262" y="235" class="s">Provider abstraction; model can change</text>
+<text x="1262" y="264" class="t">• Intent classification</text><text x="1262" y="288" class="t">• Scoring / fit / need</text><text x="1262" y="312" class="t">• Suggested reply</text>
 
-<!-- AI -->
-<rect x="80" y="620" width="390" height="180" rx="20" fill="#f5f3ff" stroke="#c4b5fd" filter="url(#shadow)"/>
-<text x="110" y="657" class="h">AI Engine</text>
-<text x="110" y="683" class="small">OpenAI / model provider abstraction</text>
-<text x="110" y="714" class="t">Intent classification</text><text x="290" y="714" class="t">Lead score 0–100</text>
-<text x="110" y="741" class="t">Spam / fit detection</text><text x="290" y="741" class="t">Need extraction</text>
-<text x="110" y="768" class="t">Reply generation</text><text x="290" y="768" class="t">Confidence</text>
+<!-- backend -->
+<rect x="205" y="390" width="1190" height="265" rx="24" fill="#fff" stroke="#c7d2fe" stroke-width="2" filter="url(#shadow)"/>
+<text x="238" y="428" class="h">FastAPI Backend — Domain Orchestration Layer</text><text x="238" y="451" class="s">Renderer calls stable APIs; domain services own business rules and provider execution.</text>
 
-<!-- DB -->
-<rect x="505" y="620" width="390" height="180" rx="20" fill="#f0fdf4" stroke="#86efac" filter="url(#shadow)"/>
-<text x="535" y="657" class="h">Database — SQLite</text>
-<text x="535" y="683" class="small">Windows-first MVP persistence</text>
-<text x="535" y="714" class="t">Users / settings</text><text x="710" y="714" class="t">Campaigns / keywords</text>
-<text x="535" y="741" class="t">Posts / leads</text><text x="710" y="741" class="t">Actions / audit logs</text>
-<text x="535" y="768" class="t">Templates</text><text x="710" y="768" class="t">Analytics</text>
+<g>
+<rect x="238" y="475" width="150" height="58" rx="12" fill="#eaf1ff"/><text x="313" y="500" text-anchor="middle" class="chip">API Routers</text><text x="313" y="519" text-anchor="middle" class="s">auth / validation</text>
+<rect x="405" y="475" width="170" height="58" rx="12" fill="#eaf8f3"/><text x="490" y="500" text-anchor="middle" class="chip">Campaign Service</text><text x="490" y="519" text-anchor="middle" class="s">schedule / state</text>
+<rect x="592" y="475" width="170" height="58" rx="12" fill="#f7f0ff"/><text x="677" y="500" text-anchor="middle" class="chip">Discovery</text><text x="677" y="519" text-anchor="middle" class="s">normalize / targets</text>
+<rect x="779" y="475" width="170" height="58" rx="12" fill="#fff5df"/><text x="864" y="500" text-anchor="middle" class="chip">Lead Service</text><text x="864" y="519" text-anchor="middle" class="s">score / review</text>
+<rect x="966" y="475" width="170" height="58" rx="12" fill="#ffeef1"/><text x="1051" y="500" text-anchor="middle" class="chip">Action Queue</text><text x="1051" y="519" text-anchor="middle" class="s">approval / execute</text>
+<rect x="1153" y="475" width="205" height="58" rx="12" fill="#edf4ff"/><text x="1255" y="500" text-anchor="middle" class="chip">Provider Adapter</text><text x="1255" y="519" text-anchor="middle" class="s">Meta capabilities</text>
+</g>
+<g>
+<rect x="238" y="557" width="150" height="58" rx="12" fill="#f1f5f9"/><text x="313" y="582" text-anchor="middle" class="chip">Keyword Engine</text><text x="313" y="601" text-anchor="middle" class="s">include / exclude</text>
+<rect x="405" y="557" width="170" height="58" rx="12" fill="#f1f5f9"/><text x="490" y="582" text-anchor="middle" class="chip">Deduplication</text><text x="490" y="601" text-anchor="middle" class="s">idempotency</text>
+<rect x="592" y="557" width="170" height="58" rx="12" fill="#f1f5f9"/><text x="677" y="582" text-anchor="middle" class="chip">AI Orchestrator</text><text x="677" y="601" text-anchor="middle" class="s">prompt / schema</text>
+<rect x="779" y="557" width="170" height="58" rx="12" fill="#f1f5f9"/><text x="864" y="582" text-anchor="middle" class="chip">Reply Service</text><text x="864" y="601" text-anchor="middle" class="s">templates / edits</text>
+<rect x="966" y="557" width="170" height="58" rx="12" fill="#f1f5f9"/><text x="1051" y="582" text-anchor="middle" class="chip">Rate Limiter</text><text x="1051" y="601" text-anchor="middle" class="s">provider / action</text>
+<rect x="1153" y="557" width="205" height="58" rx="12" fill="#f1f5f9"/><text x="1255" y="582" text-anchor="middle" class="chip">Safety + Audit</text><text x="1255" y="601" text-anchor="middle" class="s">kill switch / events</text>
+</g>
 
-<!-- Background -->
-<rect x="930" y="620" width="390" height="180" rx="20" fill="#fff7ed" stroke="#fdba74" filter="url(#shadow)"/>
-<text x="960" y="657" class="h">Background Services</text>
-<text x="960" y="714" class="t">Scheduler</text><text x="1080" y="714" class="t">Deduplication</text>
-<text x="960" y="741" class="t">Notifications</text><text x="1080" y="741" class="t">Audit log</text>
-<text x="960" y="768" class="t">Retries / errors</text><text x="1080" y="768" class="t">Kill switch</text>
+<!-- lower -->
+<rect x="55" y="710" width="360" height="245" rx="20" fill="#f5f3ff" stroke="#c4b5fd" filter="url(#shadow)"/>
+<text x="82" y="748" class="h">AI Engine</text><text x="82" y="771" class="s">Advisory only — never authorizes outbound actions</text>
+<text x="82" y="807" class="t">Intent classification</text><text x="250" y="807" class="t">Lead score 0–100</text>
+<text x="82" y="838" class="t">Fit / spam detection</text><text x="250" y="838" class="t">Need extraction</text>
+<text x="82" y="869" class="t">Reply generation</text><text x="250" y="869" class="t">Confidence</text>
+<text x="82" y="914" class="s">Structured JSON + prompt version + model metadata</text>
 
-<!-- Arrows -->
-<path d="M300 252 H350" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
-<path d="M690 255 H1000" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
-<path d="M520 335 V405" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
-<path d="M1120 335 V405" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
-<path d="M520 560 V620" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
-<path d="M700 560 V620" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
-<path d="M900 560 V620" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="440" y="710" width="410" height="245" rx="20" fill="#f0fdf4" stroke="#86efac" filter="url(#shadow)"/>
+<text x="468" y="748" class="h">SQLite + Repository Layer</text><text x="468" y="771" class="s">Windows-first persistence with migrations</text>
+<text x="468" y="807" class="t">Users / provider accounts</text><text x="665" y="807" class="t">Campaigns / keywords</text>
+<text x="468" y="838" class="t">Targets / posts / leads</text><text x="665" y="838" class="t">AI / suggestions</text>
+<text x="468" y="869" class="t">Approvals / actions</text><text x="665" y="869" class="t">Templates / analytics</text>
+<text x="468" y="900" class="t">Audit events</text><text x="665" y="900" class="t">Notifications</text>
+<text x="468" y="932" class="s">Indexed external IDs + idempotency keys prevent duplicates.</text>
 
-<!-- Workflow -->
-<rect x="60" y="845" width="1280" height="42" rx="21" fill="#e2e8f0"/>
-<text x="700" y="872" text-anchor="middle" class="t">1 Discover → 2 Normalize/Deduplicate → 3 AI Analyze → 4 Suggest → 5 Human Approve → 6 Execute → 7 Track/Audit</text>
+<rect x="875" y="710" width="310" height="245" rx="20" fill="#fff7ed" stroke="#fdba74" filter="url(#shadow)"/>
+<text x="903" y="748" class="h">Background Services</text>
+<text x="903" y="807" class="t">Scheduler</text><text x="1035" y="807" class="t">Notifications</text>
+<text x="903" y="838" class="t">Retry / backoff</text><text x="1035" y="838" class="t">Dedup jobs</text>
+<text x="903" y="869" class="t">Analytics aggregation</text><text x="1035" y="869" class="t">Health checks</text>
+<text x="903" y="900" class="t">Global pause</text><text x="1035" y="900" class="t">Campaign pause</text>
+
+<rect x="1210" y="710" width="335" height="245" rx="20" fill="#eef6ff" stroke="#93c5fd" filter="url(#shadow)"/>
+<text x="1238" y="748" class="h">Safety / Approval Boundary</text>
+<text x="1238" y="790" class="t">AI suggestion</text><text x="1370" y="790" class="t">→ not executable</text>
+<text x="1238" y="822" class="t">Human review</text><text x="1370" y="822" class="t">→ explicit approve</text>
+<text x="1238" y="854" class="t">Server-side check</text><text x="1370" y="854" class="t">→ capability</text>
+<text x="1238" y="886" class="t">Rate limit</text><text x="1370" y="886" class="t">→ action</text>
+<text x="1238" y="918" class="t">Audit result</text><text x="1370" y="918" class="t">→ track</text>
+
+<!-- arrows -->
+<path d="M290 252 H335" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M815 252 H860" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1190 252 H1235" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M575 330 V390" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1025 330 V390" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1310 330 V390" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M385 655 V710" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M680 655 V710" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1015 655 V710" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1160 655 V710" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+
+<rect x="55" y="995" width="1490" height="62" rx="28" fill="#e8eef7"/>
+<text x="800" y="1021" text-anchor="middle" class="t">1 Discover → 2 Normalize → 3 Match → 4 Deduplicate → 5 AI Analyze → 6 Suggest → 7 Human Review → 8 Approve → 9 Queue → 10 Execute → 11 Audit</text>
+<text x="800" y="1044" text-anchor="middle" class="s">Invariant: AI never authorizes outbound action; provider capability and server-side approval checks are mandatory.</text>
 </svg>

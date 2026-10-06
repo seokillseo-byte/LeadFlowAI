@@ -1,74 +1,59 @@
 # LeadFlow AI Architecture Blueprint
 
-This document is the canonical technical architecture reference for the project.
+This document is the canonical technical architecture reference.
 
-![LeadFlow AI Architecture](../blueprints/leadflow-ai-architecture.svg)
+## Master visual
+
+![LeadFlow AI Detailed Architecture](../blueprints/leadflow-ai-architecture.svg)
+
+The SVG is intentionally detailed enough to show implementation modules and the safety/approval boundary. It is not a substitute for the text specifications below.
+
+## Companion specifications
+
+- [Detailed Architecture](./detailed-architecture.md)
+- [Data Flow & State Transitions](./data-flow.md)
+- [Security & Safety](./security-safety.md)
+- [Data Model](../data/data-model.md)
+- [API Contract](../api/api-contract.md)
+- [ADRs](./decisions/)
 
 ## System layers
 
 ### 1. Windows Desktop
-- Electron
-- React
-- TypeScript
-- Dashboard
-- Lead Inbox
-- Campaign Management
-- Settings
-- Notifications
+Electron, React and TypeScript provide the desktop shell and UI information architecture:
+Dashboard, Campaigns, Keywords, Groups & Fanpages, Lead Inbox, Messages & Comments, Templates, AI Assistant, Analytics, Activity Log and Settings.
 
 ### 2. Backend API
-- FastAPI
-- Campaign Service
-- Keyword Engine
-- Lead Service
-- Action Queue
-- Integration Provider Adapter
+FastAPI owns validation, orchestration and business rules:
+API routers, campaign service, discovery, keyword engine, deduplication, lead service, AI orchestration, reply service, approval/action queue, rate limiting, safety, notifications, analytics and audit.
 
 ### 3. AI Engine
-- Intent classification
-- Lead score 0–100
-- Spam / not-fit detection
-- Need extraction
-- Suggested reply generation
-- Confidence
+The AI layer produces structured advisory output:
+- intent classification
+- lead score 0–100
+- fit/spam detection
+- need extraction
+- suggested reply
+- confidence
+- model/prompt metadata
 
 ### 4. Data
-- SQLite for the Windows-first MVP
-- Users/settings
-- Campaigns/keywords
-- Posts/leads
-- Actions/audit logs
-- Templates
-- Analytics
+SQLite is the Windows-first MVP store behind a repository layer. Core entities include users, provider accounts, campaigns, keywords, source targets, posts, leads, AI analyses, suggestions, approvals, actions, attempts, templates, audit events and notifications.
 
-### 5. External integration
-Meta integration is isolated behind a provider adapter and must use supported official Meta APIs, permissions, rate limits and account capabilities.
+### 5. External providers
+Meta and AI services are isolated behind adapters. Provider capability checks are performed before execution.
 
 ### 6. Background services
-- Scheduler
-- Deduplication
-- Notifications
-- Audit log
-- Retry/error handling
+Scheduler, retries/backoff, deduplication, notifications, analytics aggregation and health checks run outside the React UI.
 
 ## Approval boundary
 
-The default workflow is:
+Discover → Normalize → Match → Deduplicate → AI Analyze → Suggest → Human Review → Explicit Approve → Server-side Checks → Action Queue → Execute → Audit → Track.
 
-1. Discover supported content
-2. Normalize and deduplicate
-3. Analyze with AI
-4. Score lead
-5. Generate suggested response
-6. Human reviews
-7. Human approves
-8. Provider executes permitted action
-9. Audit result
-
-AI recommends; the user remains in control of outbound actions.
+AI recommends; only an explicit user approval can authorize an outbound action.
 
 ## Blueprint status
 
-Status: Approved working blueprint for the current product direction.
+Status: Approved production-direction blueprint.
 
-Any structural change should be documented as an ADR.
+Any structural change must update the relevant specification and, when architectural, an ADR.

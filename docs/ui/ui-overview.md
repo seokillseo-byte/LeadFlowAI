@@ -1,28 +1,29 @@
-# UI Overview
+# LeadFlow AI UI Overview
 
-The LeadFlow AI desktop UI is designed as a modern professional operations console.
+The UI is a Windows-first professional desktop application.
 
-## Primary experience
-The dashboard answers three questions immediately:
-1. What opportunities were found?
-2. Which leads need my attention?
-3. What should I do next?
+## Information architecture
 
-## Core screens
-- Dashboard
-- Campaign Management
-- Keyword Management
-- Groups & Pages
-- Lead Inbox
-- Messages & Comments
-- Response Templates
-- AI Assistant
-- Analytics
-- Activity Log
-- Settings
+1. Tổng quan
+2. Chiến dịch
+3. Từ khóa
+4. Nhóm & Fanpage
+5. Lead Inbox
+6. Tin nhắn & Comment
+7. Mẫu phản hồi
+8. AI Assistant
+9. Thống kê
+10. Nhật ký hoạt động
+11. Cài đặt
 
-## Visual reference
-See docs/blueprints/leadflow-ai-dashboard.svg and docs/ui/design-system.md.
+## Master visual contract
 
-## Interaction requirement
-Every outbound action has an explicit state: suggested, awaiting approval, approved, executing, completed, failed, or paused.
+`docs/blueprints/leadflow-ai-dashboard.svg` is the visual reference for the overall product shell.
+
+Every screen must preserve:
+- dark navy navigation
+- bright content workspace
+- compact information-dense cards/tables
+- consistent score/status semantics
+- visible human approval boundary
+- professional Windows desktop interaction patterns.

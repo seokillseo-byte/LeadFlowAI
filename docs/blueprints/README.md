@@ -1,13 +1,23 @@
 # LeadFlow AI Blueprints
 
-This directory contains the visual source-of-truth artifacts used by product, design, engineering and AI coding assistants.
+These SVG files are version-controlled visual source-of-truth artifacts.
 
-## Architecture
-- [Architecture Blueprint](./leadflow-ai-architecture.svg)
-- [Architecture specification](../architecture/architecture.md)
+## Master blueprints
 
-## UI
-- [Dashboard UI Blueprint](./leadflow-ai-dashboard.svg)
-- [UI Design System](../ui/design-system.md)
+- `leadflow-ai-architecture.svg` — detailed system architecture, data flow, safety boundary and implementation modules.
+- `leadflow-ai-dashboard.svg` — master product UI reference based on the approved dashboard design.
 
-The SVG files are intentionally version-controlled and text-based so they can be reviewed, diffed and referenced by ChatGPT/Coding Agents without depending on private conversation history.
+## Supporting specs
+
+Visuals are not the only source of truth. Use them together with:
+- `docs/product/requirements.md`
+- `docs/product/feature-matrix.md`
+- `docs/architecture/architecture.md`
+- `docs/architecture/detailed-architecture.md`
+- `docs/architecture/data-flow.md`
+- `docs/ui/design-system.md`
+- screen-specific UI specs under `docs/ui/`
+
+## Change rule
+
+If implementation intentionally deviates from a blueprint, update the relevant spec and blueprint in the same change set. Do not silently drift from the design.
