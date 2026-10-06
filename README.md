@@ -52,13 +52,36 @@ See [UI Design System](./docs/ui/design-system.md) for implementation rules.
 
 ## Team development
 
+### Product
+- [Product Overview](./docs/product/product-overview.md)
+- [Requirements](./docs/product/requirements.md)
+- [Roadmap](./docs/product/roadmap.md)
+
+### Architecture
+- [Architecture](./docs/architecture/architecture.md)
+- [ADR-001 Desktop Stack](./docs/architecture/decisions/ADR-001-desktop-stack.md)
+- [ADR-002 AI Engine](./docs/architecture/decisions/ADR-002-ai-engine.md)
+- [ADR-003 Meta Integration](./docs/architecture/decisions/ADR-003-meta-integration.md)
+
+### UI
+- [UI Overview](./docs/ui/ui-overview.md)
+- [Design System](./docs/ui/design-system.md)
+- [Dashboard](./docs/ui/dashboard.md)
+- [Lead Inbox](./docs/ui/lead-inbox.md)
+- [Settings](./docs/ui/settings.md)
+
+### AI & Integrations
+- [AI Scoring](./docs/ai/scoring.md)
+- [Prompt Strategy](./docs/ai/prompt-strategy.md)
+- [Reply Generation](./docs/ai/reply-generation.md)
+- [Meta Integration](./docs/integrations/meta.md)
+
+### Development
+- [Setup](./docs/development/setup.md)
+- [Testing](./docs/development/testing.md)
+- [Troubleshooting](./docs/development/troubleshooting.md)
 - [Contributing Guide](./CONTRIBUTING.md)
 - [AI Development Instructions](./AGENTS.md)
-- [Product Requirements](./docs/product/requirements.md)
-- [Architecture](./docs/architecture/architecture.md)
-- [UI Design System](./docs/ui/design-system.md)
-- [AI Scoring](./docs/ai/scoring.md)
-- [Meta Integration](./docs/integrations/meta.md)
 - [All Blueprints](./docs/blueprints/README.md)
 
 ## Run backend
