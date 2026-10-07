@@ -65,3 +65,28 @@ Start with:
 - Validate approval/idempotency for outbound work.
 - Update documentation and blueprints for behavior/architecture changes.
 - Summarize files changed and validation performed in the PR.
+
+
+## Autonomous continuation protocol
+
+The repository supports zero-conversation-context continuation across independent engineering agents.
+
+Before coding, read:
+- `docs/project-state/CURRENT_STATE.md`
+- `docs/project-state/CURRENT_MILESTONE.md`
+- `docs/project-state/ACTIVE_WORK.md`
+- `docs/project-state/NEXT_TASKS.md`
+- `docs/project-state/DECISIONS.md`
+
+The task queue determines **WHAT** to work on. The agent determines **HOW** within its ownership. Select the highest-priority unblocked task; do not invent unrelated work or duplicate an open PR.
+
+After completing a task, the agent must validate, self-review, update project-state, create/update the PR, and re-evaluate the queue. It may continue automatically only when no human gate is required.
+
+Human gates are mandatory for:
+- merging into `main`;
+- major architecture or public-contract changes;
+- external provider authorization;
+- real outbound Meta actions;
+- changes to security/safety boundaries.
+
+PASS/CI claims require evidence. Use NOT VERIFIED when evidence is unavailable. Chat history is not project memory; important state belongs in GitHub.
