@@ -7,11 +7,11 @@ export async function listLeads(): Promise<Lead[]> {
 }
 
 export async function getLead(leadId: number): Promise<Lead> {
-  const response = await apiClient.get<Lead>(`/api/leads/\${leadId}`);
+  const response = await apiClient.get<Lead>(`/api/leads/${leadId}`);
   return response.data;
 }
 
 export async function approveLead(leadId: number): Promise<Lead> {
-  const response = await apiClient.post<Lead>(`/api/leads/\${leadId}/approve`);
+  const response = await apiClient.post<Lead>(`/api/leads/${leadId}/approve`);
   return response.data;
 }
