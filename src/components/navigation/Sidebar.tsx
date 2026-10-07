@@ -1,4 +1,4 @@
-import { Activity, BarChart3, Bot, FileText, FolderKanban, Inbox, LayoutDashboard, MessageSquare, Settings, Tags, UsersRound } from "lucide-react";
+import { Activity, BarChart3, Bot, FileText, FolderKanban, Inbox, LayoutDashboard, MessageSquare, Settings, Tags, UsersRound } from "lucide-react";\nimport type { LucideIcon } from "lucide-react";
 import type { AppRoute } from "../../layouts/AppLayout";
 
 interface SidebarProps {
@@ -6,7 +6,7 @@ interface SidebarProps {
   onNavigate: (route: AppRoute) => void;
 }
 
-const items: Array<{ route: AppRoute; label: string; icon: typeof Inbox }> = [
+const items: Array<{ route: AppRoute; label: string; icon: LucideIcon }> = [
   { route: "dashboard", label: "Tổng quan", icon: LayoutDashboard },
   { route: "campaigns", label: "Chiến dịch", icon: FolderKanban },
   { route: "keywords", label: "Từ khóa", icon: Tags },
