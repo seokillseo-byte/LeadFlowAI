@@ -29,7 +29,24 @@ export function LeadInboxPage() {
             <div className="panel-head"><div><h2>Review queue</h2><small>Approval phải được backend xác nhận thành công.</small></div></div>
             <LeadList leads={leads.items} approvingId={leads.approvingId} onOpen={(lead) => void leads.openLead(lead)} onApprove={(lead) => void leads.approve(lead)} />
           </div>
-          {leads.selected && <LeadDetail lead={leads.selected} loading={leads.detailLoading} onClose={leads.closeDetail} />}
+          {(leads.selected || leads.detailLoading || leads.detailError) && (
+            leads.detailError ? (
+              <div className="detail-panel">
+                <StatePanel
+                  tone="error"
+                  title="Không thể tải chi tiết Lead"
+                  message={leads.detailError.message}
+                  action={<button className="primary" onClick={leads.retryDetail}>Thử lại</button>}
+                />
+              </div>
+            ) : leads.selected ? (
+              <LeadDetail lead={leads.selected} loading={leads.detailLoading} onClose={leads.closeDetail} />
+            ) : (
+              <div className="detail-panel">
+                <StatePanel title="Đang tải chi tiết Lead" message="Đang lấy dữ liệu từ backend…" />
+              </div>
+            )
+          )}
         </div>
       )}
       {leads.approvalError && <div className="inline-error" role="alert">{leads.approvalError.message}<button onClick={leads.clearApprovalError}>Đóng</button></div>}
