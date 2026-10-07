@@ -1,4 +1,5 @@
-import { Activity, BarChart3, Bot, FileText, FolderKanban, Inbox, LayoutDashboard, MessageSquare, Settings, Tags, UsersRound } from "lucide-react";\nimport type { LucideIcon } from "lucide-react";
+import { Activity, BarChart3, Bot, FileText, FolderKanban, Inbox, LayoutDashboard, MessageSquare, Settings, Tags, UsersRound } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import type { AppRoute } from "../../layouts/AppLayout";
 
 interface SidebarProps {
